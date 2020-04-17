@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">IPT_MobileApp</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_go_signup">New User..? Sign Up Here</string>
+
+    <string name="forgot_title">Forgot Your Password?</string>
+    <string name="reset_submit">RESET</string>
+    <string name="reset_complete">We will send to Password Reset Link to Your Email</string>
+
+    <string name="user_signup_nic">National ID</string>
+    <string name="user_signup_name">Name</string>
+    <string name="user_signup_email">Email</string>
+    <string name="user_signup_contact">Contact</string>
+    <string name="user_signup_password">Password</string>
+    <string name="user_signup_repassword">Confirm Password</string>
+    <string name="user_signup_workstate">Current Situation</string>
+    <string name="user_signup_student">Student</string>
+    <string name="user_signup_expert">Industry Worker</string>
+    <string name="user_signup_btnSubmit">Create Account</string>
+    <string name="user_signup_already">ALLREADY MEMBER? LOGIN HERE</string>
+
+
 </resources>

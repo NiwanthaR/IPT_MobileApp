@@ -46,14 +46,14 @@
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/id_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="E Mail"
+                android:hint="@string/email"
                 android:padding="5dp"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_et_email"
                     android:layout_width="match_parent"
                     android:inputType="text"
                     android:layout_height="wrap_content"
@@ -64,15 +64,15 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/id_password"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true"
                 android:padding="5dp"
-                android:hint="Password">
+                android:hint="@string/password">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_et_password"
                     android:drawablePadding="10dp"
                     android:drawableStart="@drawable/ic_password"
                     android:layout_width="match_parent"
@@ -87,20 +87,22 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/remember"
+                    android:id="@+id/login_cb_remember"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="REMEMBER ME"
+                    android:text="@string/remember_me"
                     android:layout_marginTop="20dp"
                     android:textColor="@color/colorPrimaryDark"/>
 
                 <TextView
-                    android:id="@+id/forgot_pw"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/login_tv_forgot_pw"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="20dp"
-                    android:text="FORGOT PASSWORD "
+                    android:text="@string/forgot_pass"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
                     android:textColor="@color/colorPrimaryDark"
                     />
 
@@ -113,21 +115,21 @@
                 android:backgroundTint="@color/colorPrimary"
                 app:cornerRadius="8dp"
                 android:layout_marginTop="20dp"
-                android:id="@+id/btn_login"
+                android:id="@+id/login_btn_login"
                 android:minWidth="200dp"
                 android:textSize="15sp"
-                android:text="LOGIN">
+                android:text="@string/btn_login">
 
             </com.google.android.material.button.MaterialButton>
 
             <Button
                 android:layout_marginTop="20dp"
-                android:id="@+id/nav_reg"
+                android:id="@+id/login_btn_signup"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:backgroundTint="#fff"
-                android:text="NEW USER? REGISTER HERE "/>
+                android:text="@string/btn_go_signup"/>
 
 
         </LinearLayout>

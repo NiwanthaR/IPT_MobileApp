@@ -8,6 +8,8 @@ import android.os.Handler;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
+    private static int SPLASH_TIME_OUT=3000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +18,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreenActivity.this,LoginActivity.class));
+                Intent homeIntent = new Intent(SplashScreenActivity.this,LoginActivity.class);
+                startActivity(homeIntent);
+                finish();
             }
-        },2000);
+        },SPLASH_TIME_OUT);
     }
 }
