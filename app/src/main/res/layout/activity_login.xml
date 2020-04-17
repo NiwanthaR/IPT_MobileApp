@@ -91,7 +91,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/remember_me"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
                     android:textColor="@color/colorPrimaryDark"/>
 
                 <TextView
@@ -99,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:text="@string/forgot_pass"
                     android:gravity="right"
                     android:layout_marginRight="20dp"
@@ -109,12 +110,20 @@
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/login_alert_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alert_box"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimary"
                 app:cornerRadius="8dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:id="@+id/login_btn_login"
                 android:minWidth="200dp"
                 android:textSize="15sp"

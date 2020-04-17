@@ -19,6 +19,7 @@
             android:layout_weight="3">
 
             <ImageView
+                android:id="@+id/profile_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/user"
@@ -33,6 +34,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/profile_user_name_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="User Name"
@@ -41,6 +43,7 @@
                 android:layout_marginTop="10dp"/>
 
             <TextView
+                android:id="@+id/profile_user_email_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="anyonename@email.com"
@@ -71,31 +74,17 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your NIC"
+                android:hint="@string/edit_profile_name"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_password"
-                    android:drawablePadding="10dp"
-                    android:text="950660770v"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Name"
-                android:layout_marginBottom="10dp">
-
-                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_user_et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_user_name"
                     android:drawablePadding="10dp"
                     android:text="Dulanjali Senarathna"
+                    android:clickable="false"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -103,15 +92,35 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your Email"
+                android:hint="@string/edit_profile_nic"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_user_et_nic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:text="950660770v"
+                    android:clickable="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_profile_email"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_user_et_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email"
                     android:drawablePadding="10dp"
                     android:text="dulanjalisenarathna@gmail.com"
+                    android:clickable="false"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -119,16 +128,18 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contact Number"
+                android:hint="@string/edit_profile_contact"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_user_et_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_contact"
                     android:drawablePadding="10dp"
                     android:text="0713725452"
                     android:inputType="phone"
+                    android:clickable="false"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -151,10 +162,10 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/colorPrimary"
                     app:cornerRadius="8dp"
-                    android:id="@+id/btn_update_profile"
+                    android:id="@+id/profile_btn_go_update_profile"
                     android:minWidth="200dp"
                     android:textSize="15sp"
-                    android:text="UPDATE PROFILE"
+                    android:text="@string/edit_profile_btn"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true">
 

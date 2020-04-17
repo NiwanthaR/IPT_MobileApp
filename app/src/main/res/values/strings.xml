@@ -24,5 +24,47 @@
     <string name="user_signup_btnSubmit">Create Account</string>
     <string name="user_signup_already">ALLREADY MEMBER? LOGIN HERE</string>
 
+    <string name="add_qualification_title">Fill Your Qualification</string>
+    <string name="add_qualification_name">Full Name</string>
+    <string name="add_qualification_age">Your Age</string>
+    <string name="add_qualification_faculty">Your Faculty</string>
+    <string name="add_qualification_interest">Your Interest</string>
+    <string name="add_qualification_btn">ADD QUALIFICATION</string>
+
+
+    <string name="edit_profile_name">Your Name</string>
+    <string name="edit_profile_nic">Your NIC</string>
+    <string name="edit_profile_email">Your Email</string>
+    <string name="edit_profile_contact">Your Contact</string>
+    <string name="edit_profile_btn">UPDATE PROFILE</string>
+
+
+    <string-array name="job_category">
+        <item>Select Here</item>
+        <item>Web Develop</item>
+        <item>Quality Assurance</item>
+        <item>Mobile App Developer</item>
+        <item>Project Management</item>
+    </string-array>
+
+    <string-array name="language_category">
+        <item>Select Here</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>Laravel</item>
+        <item>C</item>
+        <item>C++</item>
+        <item>C#</item>
+    </string-array>
+
+    <string-array name="ide_category">
+        <item>Select Here</item>
+        <item>Visual Studio</item>
+        <item>Android Studio</item>
+        <item>Sublime Text</item>
+        <item>Visual Code</item>
+        <item>Microsoft Database Server</item>
+    </string-array>
+
 
 </resources>

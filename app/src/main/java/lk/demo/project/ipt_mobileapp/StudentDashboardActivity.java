@@ -3,13 +3,12 @@ package lk.demo.project.ipt_mobileapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.EditText;
 
-public class ProfileActivity extends AppCompatActivity {
+public class StudentDashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_student_dashboard);
     }
 }

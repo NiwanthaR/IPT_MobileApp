@@ -14,8 +14,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText login_email,login_password;
     private Button btn_login,btn_signup;
-    private TextView go_fogot_dash;
+    private TextView go_fogot_dash,alert_box;
     private CheckBox remember_me;
+
+    private String email,password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,23 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),ForgotPasswordActivity.class));
             }
         });
+
+        //login button code
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                email = login_email.getText().toString().trim();
+                password = login_password.getText().toString().trim();
+
+                if (ValidationData.login_validate(email,password))
+                {
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                }else {
+                    alert_box.setText("Please Fill All Details");
+                }
+            }
+        });
     }
 
     private void ui_declare() {
@@ -49,5 +68,6 @@ public class LoginActivity extends AppCompatActivity {
         btn_signup = findViewById(R.id.login_btn_signup);
         go_fogot_dash = findViewById(R.id.login_tv_forgot_pw);
         remember_me = findViewById(R.id.login_cb_remember);
+        alert_box = findViewById(R.id.login_alert_box);
     }
 }

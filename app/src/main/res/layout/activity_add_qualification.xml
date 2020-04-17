@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fill Your Qualification"
+            android:text="@string/add_qualification_title"
             android:textSize="22dp"
             android:gravity="center_horizontal"
             android:layout_marginTop="20dp"/>
@@ -29,10 +29,9 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Full Name"
+            android:hint="@string/add_qualification_name"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:singleLine="true" />
@@ -44,12 +43,11 @@
             android:textSize="15sp"
             android:layout_marginRight="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Your Age"
+            android:hint="@string/add_qualification_age"
             android:inputType="number"
             android:padding="10dp"
             android:singleLine="true" />
@@ -61,66 +59,47 @@
             android:textSize="15sp"
             android:layout_marginRight="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Your Faculty"
+            android:hint="@string/add_qualification_faculty"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:singleLine="true" />
 
-        <EditText
-            android:id="@+id/qualification_et_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:layout_marginRight="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/input_outline"
-            android:ems="10"
-            android:hint="Job Category"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:singleLine="true" />
 
-        <EditText
-            android:id="@+id/qualification_et_language"
+        <Spinner
+            android:id="@+id/add_qualification_job_category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/input_outline"
-            android:ems="10"
-            android:hint="Programming Languages"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:singleLine="true" />
+            android:autofillHints="Select Job Category"/>
 
-        <EditText
-            android:id="@+id/qualification_et_IDE"
+        <Spinner
+            android:id="@+id/add_qualification_language"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/input_outline"
-            android:ems="10"
-            android:hint="Expert IDEs"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:singleLine="true" />
+            android:autofillHints="@string/user_signup_contact"
+            android:importantForAutofill="yes"/>
+
+        <Spinner
+            android:id="@+id/add_qualification_ide"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_outline"
+            android:autofillHints="Select Job Category"/>
+
 
         <EditText
             android:id="@+id/qualification_et_interest"
@@ -129,28 +108,37 @@
             android:textSize="15sp"
             android:layout_marginRight="20dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/input_outline"
             android:ems="10"
-            android:hint="Your Interests"
+            android:hint="@string/add_qualification_interest"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/qualification_alert_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alert_box"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorPrimary"
             app:cornerRadius="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:id="@+id/qualification_et_btn_submit"
             android:minWidth="200dp"
             android:textSize="15sp"
-            android:text="ADD QUALIFICATION"/>
+            android:text="@string/add_qualification_btn"/>
+
 
     </LinearLayout>
 

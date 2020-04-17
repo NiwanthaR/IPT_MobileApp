@@ -94,9 +94,7 @@
                 android:inputType="text"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_user_name"
-                android:drawablePadding="10dp"
-
-                />
+                android:drawablePadding="10dp"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -318,6 +316,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/alert_box"
+            android:gravity="center"
             android:layout_marginTop="5dp"/>
 
 

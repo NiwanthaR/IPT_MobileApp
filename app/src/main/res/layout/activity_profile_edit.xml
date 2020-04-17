@@ -41,12 +41,12 @@
                         app:cardCornerRadius="50dp">
 
                         <ImageView
-                            android:id="@+id/profile_details_edit_user_name_image"
+                            android:id="@+id/profile_edite_user_img"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:elevation="1dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/user"></ImageView>
+                            android:src="@drawable/user"/>
 
                     </com.google.android.material.card.MaterialCardView>
                 </FrameLayout>
@@ -66,6 +66,7 @@
                     app:cardCornerRadius="18dp">
 
                     <ImageView
+                        android:id="@+id/profile_edite_add_img"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_camera"
@@ -84,6 +85,7 @@
             android:layout_weight="2">
 
             <TextView
+                android:id="@+id/profile_edit_tv_owner_name1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="User Name"
@@ -92,6 +94,7 @@
                 android:layout_marginTop="10dp"/>
 
             <TextView
+                android:id="@+id/profile_edit_tv_owner_email1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="anyonename@email.com"
@@ -122,26 +125,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your NIC"
+                android:hint="@string/edit_profile_name"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_password"
-                    android:drawablePadding="10dp"
-                    android:text="950660770v"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Your Name"
-                android:layout_marginBottom="10dp">
-
-                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_edit_owner_name2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_user_name"
@@ -154,10 +142,28 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your Email"
+                android:hint="@string/edit_profile_nic"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_edit_owner_nic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:drawablePadding="10dp"
+                    android:text="950660770v"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/edit_profile_email"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_edit_owner_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_email"
@@ -170,10 +176,11 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contact Number"
+                android:hint="@string/edit_profile_contact"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_edit_owner_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_contact"
@@ -183,6 +190,14 @@
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/profile_edit_alert_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alert_box"
+                android:gravity="center"
+                android:layout_marginTop="5dp"/>
 
         </LinearLayout>
 
@@ -202,10 +217,10 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/colorPrimary"
                     app:cornerRadius="8dp"
-                    android:id="@+id/btn_update_profile"
+                    android:id="@+id/profile_edit_update_profile"
                     android:minWidth="200dp"
                     android:textSize="15sp"
-                    android:text="UPDATE PROFILE"
+                    android:text="@string/edit_profile_btn"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true">
 
